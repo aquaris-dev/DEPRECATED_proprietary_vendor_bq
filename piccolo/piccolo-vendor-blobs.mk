@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -48,12 +48,10 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/bq/piccolo/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
+    vendor/bq/piccolo/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
     vendor/bq/piccolo/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/bq/piccolo/proprietary/lib/libarcsoft_beauty_shot.so:system/lib/libarcsoft_beauty_shot.so \
     vendor/bq/piccolo/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
     vendor/bq/piccolo/proprietary/lib/libcam.beautyshot.so:system/lib/libcam.beautyshot.so \
-    vendor/bq/piccolo/proprietary/lib/libcam.meiyan.so:system/lib/libcam.meiyan.so \
     vendor/bq/piccolo/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/piccolo/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/piccolo/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -87,18 +85,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_imx214_olqba15_video_hdr.so:system/vendor/lib/libchromatix_imx214_olqba15_video_hdr.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_imx214_olqba15_video_hd.so:system/vendor/lib/libchromatix_imx214_olqba15_video_hd.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_imx214_olqba15_video.so:system/vendor/lib/libchromatix_imx214_olqba15_video.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_common.so:system/vendor/lib/libchromatix_s5k5e2_cma189_common.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_cma189_liveshot.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_preview.so:system/vendor/lib/libchromatix_s5k5e2_cma189_preview.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_cma189_snapshot.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_cma189_video_hd.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_cma189_video.so:system/vendor/lib/libchromatix_s5k5e2_cma189_video.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_common.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_liveshot.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_preview.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_snapshot.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video_hd.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so:system/vendor/lib/libchromatix_s5k5e2_olq5f20_video.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_common.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_common.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_liveshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_liveshot.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_preview.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_preview.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_snapshot.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_snapshot.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_video_hd.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_video_hd.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libchromatix_s5k5e2_olq5f24_video.so:system/vendor/lib/libchromatix_s5k5e2_olq5f24_video.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -116,14 +108,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_imx214_f13n05e_eeprom.so:system/vendor/lib/libmmcamera_imx214_f13n05e_eeprom.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_imx214_f13n05e.so:system/vendor/lib/libmmcamera_imx214_f13n05e.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_imx214_olqba15_eeprom.so:system/vendor/lib/libmmcamera_imx214_olqba15_eeprom.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_imx214_olqba15.so:system/vendor/lib/libmmcamera_imx214_olqba15.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_s5k5e2_cma189_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_cma189_eeprom.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_s5k5e2_cma189.so:system/vendor/lib/libmmcamera_s5k5e2_cma189.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f20_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f20_eeprom.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f20.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f20.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f24_eeprom.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f24_eeprom.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_s5k5e2_olq5f24.so:system/vendor/lib/libmmcamera_s5k5e2_olq5f24.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
@@ -132,12 +124,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/bq/piccolo/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
-
-# Camera (https://github.com/TheMuppets/proprietary_vendor_wileyfox/tree/132e365aae0bc2add714e7b1e193cef530e398ca/kipper)
-PRODUCT_COPY_FILES += \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so
+    vendor/bq/piccolo/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so
 
 # Camera firmware
 PRODUCT_COPY_FILES += \
@@ -162,26 +151,17 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/bq/piccolo/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
+    vendor/bq/piccolo/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
 
 # GPS
 PRODUCT_COPY_FILES += \
-    vendor/bq/piccolo/proprietary/bin/location-mq:system/bin/location-mq \
-    vendor/bq/piccolo/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/bq/piccolo/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/bq/piccolo/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/bq/piccolo/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so
 
 # Graphics
 PRODUCT_COPY_FILES += \
@@ -211,7 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/bq/piccolo/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so
 
@@ -219,9 +198,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance
 
+# Media
+PRODUCT_COPY_FILES += \
+    vendor/bq/piccolo/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so
+
 # NFC
 PRODUCT_COPY_FILES += \
-    vendor/bq/piccolo/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0035_Generic_I2C_NCD_Unsigned_configdata.ncd:system/vendor/firmware/BCM20795A2_001.003.025.0005.0035_Generic_I2C_NCD_Unsigned_configdata.ncd
+    vendor/bq/piccolo/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0050_Generic_I2C_NCD_Unsigned_configdata.ncd:system/vendor/firmware/BCM20795A2_001.003.025.0005.0050_Generic_I2C_NCD_Unsigned_configdata.ncd
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -230,10 +215,13 @@ PRODUCT_COPY_FILES += \
 
 # Postprocessing
 PRODUCT_COPY_FILES += \
-    vendor/bq/piccolo/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
+    vendor/bq/piccolo/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/bq/piccolo/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
-    vendor/bq/piccolo/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so
+    vendor/bq/piccolo/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so
 
 # Qualcomm
 PRODUCT_COPY_FILES += \
@@ -247,6 +235,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
@@ -263,9 +252,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
+    vendor/bq/piccolo/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
@@ -301,14 +292,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/bq/piccolo/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/bq/piccolo/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt
-
-# Widevine firmware
-PRODUCT_COPY_FILES += \
-    vendor/bq/piccolo/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00 \
-    vendor/bq/piccolo/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01 \
-    vendor/bq/piccolo/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02 \
-    vendor/bq/piccolo/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03 \
-    vendor/bq/piccolo/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt
 
 # Wifi
 PRODUCT_COPY_FILES += \

@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,11 @@
 
 # Prebuilt APK
 PRODUCT_PACKAGES += \
-    com.qualcomm.location \
     TimeService
 
 # Prebuilt vendor/lib needed for compilation
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
-    libloc_ds_api \
     libtime_genoff
 
 $(call inherit-product, vendor/bq/piccolo/piccolo-vendor-blobs.mk)
