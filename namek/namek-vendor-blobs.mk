@@ -286,7 +286,6 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    vendor/bq/namek/proprietary/bin/ptt_socket_app:system/bin/ptt_socket_app \
     vendor/bq/namek/proprietary/bin/wcnss_service:system/bin/wcnss_service
 
 # Misc
