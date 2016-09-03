@@ -139,6 +139,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/bq/piccolo/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/bq/piccolo/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so
+    
+# Core_Ctl
+PRODUCT_COPY_FILES += \
+    vendor/bq/piccolo/proprietary/lib/modules/core_ctl.ko:system/lib/modules/core_ctl.ko
 
 # DRM
 PRODUCT_COPY_FILES += \
