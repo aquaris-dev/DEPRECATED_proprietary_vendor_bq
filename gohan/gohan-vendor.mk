@@ -432,6 +432,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     shutdownlistener \
     TimeService \
+    libtime_genoff \
     CNEService \
     com.qualcomm.location \
     qcrilmsgtunnel \
